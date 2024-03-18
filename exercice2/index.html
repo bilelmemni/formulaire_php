@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de pièce auto</title>
+</head>
+
+<body>
+    <h1>Vente de pièce auto</h1>
+    <h2>Bon de commande</h2>
+    <form action="commande.php" method="get">
+        <p>Articles Quantite</p>
+        <label for="pneu" class="form-label">pneu :</label>
+        <input type="number" id="pneu" name="pneu" value="12" min="1"><br>
+        <label for="huiles" class="form-label">huiles :</label>
+        <input type="number" id="huiles" name="huiles" value="3" min="1"><br>
+        <label for="bougies" class="form-label">bougies :</label>
+        <input type="number" id="bougies" name="bougies" value="4" min="1"><br>
+        <p>Titre</p>
+        <input type="radio" id="mme" name="title" value="Mme">
+        <label for="MR">MR</label>
+        <input type="radio" id="MR" name="title" value="Mme">
+        <label for="mme">Mme</label>
+        <input type="radio" id="melle" name="title" value="Melle">
+        <label for="melle">Melle</label><br>
+        <p>Prénom</p>
+        <input type="text" id="name" name="name" value="Mariem"><br>
+        <p>Adresse</p>
+        <textarea id="address" name="address" rows="4" cols="50">
+        10, rue Montazah Rades
+        </textarea><br>
+        <p>Client sur internet</p>
+        <select id="customer" name="customer">
+            <option value="new" selected>ancien client sur internet</option>
+            <option value="existing">Existant</option>
+        </select><br>
+        <input type="submit" value="passer commande">
+    </form>
+</body>
+
+</html>
